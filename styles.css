@@ -1,0 +1,106 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #f0f0f0;
+}
+
+.cta-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 24px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  border-radius: 5px;
+}
+
+/* Features Section */
+.features {
+  display: flex;
+  gap: 20px;
+  margin: 50px 0;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.feature {
+  flex: 1 1 300px;
+  max-width: 350px;
+  text-align: center;
+  padding: 20px;
+  background-color: #e0e0e0;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.feature:hover {
+  transform: scale(1.05);
+}
+
+.feature img {
+  width: 80px; /* fixed width */
+  height: 80px; /* fixed height */
+  object-fit: cover; /* make sure it covers nicely */
+  margin-bottom: 15px;
+  border-radius: 50%; /* make the icon circular */
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #f8f8f8;
+  margin-top: 50px;
+  font-size: 14px;
+}
+
+/* Responsive Breakpoints */
+
+/* Tablets (portrait and landscape) */
+@media (max-width: 1024px) {
+  .features {
+    gap: 15px;
+  }
+}
+
+/* Mobile phones */
+@media (max-width: 600px) {
+  .hero {
+    padding: 40px 10px;
+  }
+  
+  .cta-button {
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+
+  .features {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .feature {
+    width: 100%;
+    max-width: 90%;
+  }
+
+  .feature img {
+    width: 60px; /* slightly smaller icons on mobile */
+    height: 60px;
+  }
+}
